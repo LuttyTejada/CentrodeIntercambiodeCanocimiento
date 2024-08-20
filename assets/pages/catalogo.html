@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../images/logo.webp" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/74d08eb395.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery.bpopup.js"></script>
+    <script type="text/javascript">
+			$(document).ready(function(){
+				$("#btnCarProd").click(function(){
+					$("#vntCarProd").bPopup();
+				})
+			});
+    </script>
+    <title>Catalogo</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="../../index.html"><img src="../images/logo.webp" alt="logotipo"></a>
+        <nav>
+            <ul>
+                <li><a href="./catalogo.html">Catalogo</a></li>
+                <li><a href="./login.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="pagina2">
+        <div class="vntFlot" id="vntCarProd" style="display: none;">
+            <h1>Metodos de pago</h1>
+            <form target="_blank" action="../La verguenza - Annie Ernaux.pdf">
+                <input type="submit" value="Pagar">
+            </form>
+        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="menubtn">
+                Filtros
+            </label>
+            <ul class="horizontal">
+                <li>
+                    <a href="#">4° Año</a>
+                    <ul class="vertical">
+                        <li><a href="#">Materia</a></li>
+                        <li><a href="#">Materia</a></li>
+                        <li><a href="#">Materia</a></li>
+                        <li><a href="#">Materia</a></li>
+                        <li><a href="#">Materia</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">3° Año</a>
+                    <ul class="vertical">
+                        <li><a href="#">Materia</a></li>
+                        <li><a href="#">Materia</a></li>
+                        <li><a href="#">Materia</a></li>
+                        <li><a href="#">Materia</a></li>
+                        <li><a href="#">Materia</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <h1>Subidos Recientemente</h1>
+        <table>
+            <tr>
+                <td class="tableimg" rowspan="4"><img src="../images/trabajo1.webp" alt="trabajo1"></td>
+                <th>4° año soc.</th>
+            </tr>
+            <tr>
+                <td><p>Trabajo practico de geografia<br>5 paginas</p></td>
+            </tr>
+            <tr><td>$3.100</td></tr>
+            <tr><td><a id="btnCarProd" target="_blank">adquirir</a></td></tr>
+        </table>
+        <table>
+            <tr>
+                <td class="tableimg" rowspan="4"><img src="../images/trabajo2.jpeg" alt="trabajo1"></td>
+                <th>2° año</th>
+            </tr>
+            <tr>
+                <td><p>Resumen de Filosofía<br>5 paginas</p></td>
+            </tr>
+            <tr><td>$2.600</td></tr>
+            <tr><td><a href="">adquirir</a></td></tr>
+        </table>
+        <table>
+            <tr>
+                <td class="tableimg" rowspan="4"><img src="../images/trabajo3.webp" alt="trabajo1"></td>
+                <th>3° año tur.</th>
+            </tr>
+            <tr>
+                <td><p>Tarea de Matemáticas<br>3 paginas</p></td>
+            </tr>
+            <tr><td>$2.999</td></tr>
+            <tr><td><a href="">adquirir</a></td></tr>
+        </table>
+        <table>
+            <tr>
+                <td class="tableimg" rowspan="4"><img src="../images/trabajo4.webp" alt="trabajo1"></td>
+                <th>4° año nat.</th>
+            </tr>
+            <tr>
+                <td><p>Sistema respiratorio<br>7 paginas</p></td>
+            </tr>
+            <tr><td>$3.780</td></tr>
+            <tr><td><a href="">adquirir</a></td></tr>
+        </table>
+    </main>
+</body>
+</html>

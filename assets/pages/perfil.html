@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../images/logo.webp" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/74d08eb395.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery.bpopup.js"></script>
+    <script type="text/javascript">
+			$(document).ready(function(){
+				$("#btnCarProd").click(function(){
+					$("#vntCarProd").bPopup();
+				})
+			});
+    </script>
+    <title>Perfil</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="../../index.html"><img src="../images/logo.webp" alt="logotipo"></a>
+        <nav>
+            <ul>
+                <li><a href="./catalogo.html">Catalogo</a></li>
+                <li><a href="./login.html">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="perfil">
+        <div class="vntFlot" id="vntCarProd" style="display: none;">
+            <h1>Carga de trabajos</h1>
+            <form action="">
+                <label for="nombre">Ingresar nombre del trabajo</label><input type="text" name="nombre">
+                <label for="descripcion">Ingresar descripción</label><textarea name="descripcion" id="descripcion"></textarea>
+                <label for="precio">Ingresar precio</label><input type="number" name="precio">
+                <label for="archivo">Seleccionar archivo</label><input type="file" name="archivo" id="archivo">
+                <input type="submit" value="Subir trabajo">
+            </form>
+        </div>
+        <section>
+            <img class="foto" src="../images/persona.webp" alt="foto de perfil">
+            <p><strong>Nombre y Apellido</strong></p>
+            <p>Curso</p>
+            <p>Edad</p>
+        </section>
+        <section>
+            <h2>Trabajos Publicados</h2>
+            <table>
+                <tr>
+                    <td class="tableimg" rowspan="4"><img src="../images/trabajo1.webp" alt="trabajo1"></td>
+                    <th>4° año soc.</th>
+                </tr>
+                <tr>
+                    <td><p>Trabajo practico de geografia<br>5 paginas</p></td>
+                </tr>
+                <tr><td>$4.119</td></tr>
+            </table>
+            <table>
+                <tr>
+                    <td class="tableimg" rowspan="4"><img src="../images/trabajo2.jpeg" alt="trabajo1"></td>
+                    <th>2° año</th>
+                </tr>
+                <tr>
+                    <td><p>Resumen de Filosofía<br>5 paginas</p></td>
+                </tr>
+                <tr><td>$2.700</td></tr>
+            </table>
+            <button id="btnCarProd">+</button>
+        </section>
+    </main>
+</body>
+</html>

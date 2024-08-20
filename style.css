@@ -1,0 +1,351 @@
+@font-face{font-family: clearSans;src: url("./assets/fonts/ClearSans-Regular.ttf");}
+@font-face{font-family: Horizon;src: url("./assets/fonts/horizon.otf");}
+@font-face{font-family: Roxborough;src: url("./assets/fonts/MoreSugar-Regular.ttf CF.ttf");}
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tenor+Sans&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+/* ENCABEZADO */
+header{
+    width: 100%;
+    height: 130px;
+    background-color: #e8cfc1;
+}
+.logo{position: absolute; padding: 0 35px;}
+.logo img{height: 130px;}
+nav ul{margin-right: 40px; float: right;}
+nav ul li{
+    margin: 15px;
+    line-height: 100px;
+    display: inline-block;
+}
+nav li a{
+    padding: 7px 35px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .9em;
+    font-family: 'clearSans';
+    color: #000;
+    background-color: #f2bd99;
+}
+li a:hover{background-color: #fbb688; transition: .4s;}
+li a:active{color: #fff; background-color: #5a5a5a; transition: 0s;}
+
+/* -----------PRESENTACION------------- */
+main{width: 100%;}
+.presentacion{
+    width: 100%;
+    height: 480px;
+    padding: 60px;
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+    url(./assets/images/escritorio.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.presentacion h1{
+    width: 60%; 
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em; 
+    font-weight: lighter;
+    font-family: 'Roxborough';
+}
+.presentacion p{
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+.presentacion a{
+    width: 18%;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'clearSans';
+    color: #000;
+    background-color: #e8cfc1;
+    display: block;
+}
+.presentacion a:hover{background-color: #dec0af;transition: .4s;}
+.presentacion a:active{color: #fff; background-color: #5a5a5a; transition: 0s;}
+
+/* -------------BENEFICIOS------------ */
+.beneficios{
+    width: 100%;
+    height: 480px;
+    display: flex;
+    background-color: #f0dfc8;
+}
+.beneficioimg{
+    width: 50%;
+    height: 92%;
+    margin: 20px;
+    background-image: url(./assets/images/estudio.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5em;
+}
+.beneficiocontent{width: 80%;height: 100%;margin: 30px;}
+.beneficiocontent li{padding: 10px;}
+.beneficiocontent ul{font-size: 1.2em;font-family: 'Poppins';}
+.beneficiocontent h2{
+    padding: 20px;
+    font-size: 1.8em;
+    font-family: 'Horizon';
+}
+
+.beneficios article{width: 100%;padding: 30px;}
+.color{background-color: #f2bd99;}
+.beneficios article p{
+    width: 70%;
+    padding: 35px 0;
+    font-size: 1.3em;
+    font-family: 'Poppins';
+}
+.beneficios article h3{
+    padding: 10px;
+    font-size: 1.3em;
+    font-family: 'moreSugar';
+    color: #5a424c;
+    clear: both;
+}
+.beneficios .linea{width: 9em;height: 2px;margin: 30px; background-color: #523e27;}
+.beneficios, .uno{float: right;}
+
+/* --------------CATALOGO-------------- */
+.catalogo{ 
+    width: 100%;
+    height: 470px;
+    background-color: #e8cfc1;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.catalogo h2{
+    width: 100%;
+    padding: 35px;
+    font-size: 2.3em; 
+    font-weight: lighter;
+    font-family:'Lucida Sans', sans-serif;
+    color: #5a424c;
+}
+.catalogo article{
+    padding: 15px;
+    width: 20%;
+    height: 310px;
+    font-family: 'clearSans';
+    background-color: #7b654c;
+}
+.catalogo a{
+    padding: 6px;
+    font-size: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+    background-color: #dee0e5;
+    display: block;
+}
+.catalogo h4{text-transform: uppercase; color: #f2bd99;}
+.catalogo p{font-size: .8em; color: #e8cfc1;}
+.catalogo img{width: 160px;}
+
+/* -----------------CONTACTO------------------ */
+.contact{width: 100%;height: 490px;padding-top: 60px; background-color: #e8cfc1;}
+.contact{text-align: center;}
+.contact i{color: #7b654c;}
+.conctactimg{
+    width: 40%;
+    height: 92%;
+    margin: 20px;
+    background-image: url(./assets/images/alumnos.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5em;
+    float: left;
+}
+.contact h2{
+    padding: 40px 20px;
+    font-size: 4em;
+    font-family: 'Lucida sans';
+    color: #ce6857;
+}
+.contact p{
+    padding: 15px;
+    font-size: 1.2em;
+    font-family: 'Forum';
+    color: #523e27;
+}
+
+/* ----------------FUNCIONAMIENTO--------------- */
+.funcion{
+    width: 100%;
+    height: 470;
+    padding: 40px;
+    background-color: #e8cfc1;
+}
+.funcion h2{font-size: 3em;font-family: 'Roxborough';}
+.funcion h3{padding-bottom: 40px; font-size: 1.8em;font-weight: 300; font-family: 'Poppins';}
+
+.container{width: 70%;height: 630px;margin: auto; position: relative;}
+.container ul{font-family: 'Poppins'; list-style: none;}
+.container::after{
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 100%;
+    background-image: linear-gradient(to bottom,#ce6857,#ce6857);
+}
+.container ul li{
+    width: 50%;
+    height: auto;
+    padding: 10px 10px 45px;
+    border-radius: 25px;
+    text-align: justify;
+    font-size: 1.4em;
+    background-image: linear-gradient(#d99488e2,#d99488e2);
+}
+.container ul li .circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ce6857;
+    position: absolute;
+    top: 3em;
+}
+.container ul li:nth-child(odd){text-align: end; float: left;clear: right;transform: translateX(-30px);}
+.container ul li:nth-child(even){float: right;clear: left;transform: translateX(30px);}
+.container ul li:nth-child(odd) .circle{right: -33px;transform: translate(50%, -50%);}
+.container ul li:nth-child(even) .circle{left: -27px; transform: translate(-50%, -50%);}
+
+/* -----------------------------PAGINA CATALOGO----------------------------- */
+.pagina2{width: 100%;padding: 20px; background-color: #f0dfc8;}
+table td{padding: 0 10px;}
+.tableimg{width: 270px;}
+.pagina2 table img{width: 100%;padding: 7px;}
+table th{
+    padding: 0 10px; 
+    text-align: start;
+    text-transform: uppercase;
+    color: #f2bd99;
+}
+.pagina2 h1{
+    padding: 50px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 400;
+    font-family: 'Lucida sans';
+    color: #5a424c;
+}
+table{
+    width: 70%;
+    height: 200px;
+    border-radius: 25px;
+    margin: 20px auto;
+    font-size: 1.7em;
+    font-family: 'Poppins';
+    color: #e8cfc1;
+    background-color: #7b654c;
+}
+.pagina2 table a{
+    margin-right: 7em;
+    padding: 8px 60px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: 'clearSans';
+    color: #000;
+    background-color: #dee0e5;
+    float: right;
+}
+.pagina2 nav{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.pagina2 .vertical li{line-height: 20px;display: block;}
+.pagina2 .horizontal{display: none;}
+.pagina2 a{margin: 0;padding: 5px;background-color: #ce6857;}
+#check{display: none;}
+#check:checked ~ ul{display: block;}
+.menubtn{
+    padding: 20px;
+    border-radius: 25px;
+    font-size: 30px;
+    background-color: #dee0e5;
+    float: right;
+    cursor: pointer;
+}
+.pagina2 ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ce6857;
+}
+
+/* -----------------------------INICIAR SESION----------------------------------- */
+.pagina2 form div{margin: 40px;}
+.pagina2 form h1{padding-bottom: 10px;}
+.pagina2 form p{font-family: 'Poppins';}
+form{
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    background-color:#ce6857;
+}
+form .texto input{width: 100%;padding: 13px;font-size: 1.1em;}
+form input[type="submit"]{padding: 10px 25px;font-size: 1.3em;cursor: pointer;}
+
+/* --------------------------------------PERFIL----------------------------------- */
+.perfil{
+    width: 100%;
+    padding: 20px; 
+    background-color: #f0dfc8;
+    display: flex;
+    justify-content: space-around;
+}
+.perfil section{width: 50%;}
+.perfil h2{text-align: center;font-size: 2em; font-family: 'Lucida sans';}
+.perfil .foto{width: 50%;border-radius: 50%;}
+.perfil table img{width: 180px;}
+.perfil table{width: 100%;}
+.perfil table p{margin: 0;}
+.perfil p{
+    margin: 10px 30px;
+    font-size: 1.2em;
+    font-family: 'Poppins';
+}
+.perfil button{
+    width: 100%;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 3em;
+    background-color: #dee0e5;
+    cursor: pointer;
+}
+.perfil table a{
+    padding: 8px 60px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: 'clearSans';
+    color: #000;
+    background-color: #dee0e5;
+    float: right;
+}
+.vntFlot{
+    width: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'clearSans';
+    background-color: #e8cfc1;
+}
+.vntFlot form{background-color: #e8cfc1;display: flex;flex-direction: column;}
+.vntFlot form input, form textarea{margin-bottom: 3em;padding: 7px;}
+.vntFlot form textarea{height: 80px;}
+.vntFlot form input[type="submit"]{
+    width: 200px;
+    background-color: #797979; 
+}
